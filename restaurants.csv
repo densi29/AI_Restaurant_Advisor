@@ -1,0 +1,21 @@
+Restaurant,Cuisine,Price,Distance,Rating,Vegetarian
+Spice Garden,Indian,800,2.0,4.5,Yes
+Masala Junction,Indian,1200,4.0,4.2,Yes
+Tandoori House,Indian,1600,6.0,4.7,No
+South Corner,South Indian,600,1.5,4.4,Yes
+Udupi Delight,South Indian,750,3.0,4.1,Yes
+Dosa Hub,South Indian,500,2.5,4.0,Yes
+China Bowl,Chinese,1100,3.5,4.3,No
+Wok Express,Chinese,800,2.0,4.0,No
+Golden Dragon,Chinese,1800,7.0,4.6,No
+Pasta House,Italian,1800,5.0,4.6,No
+Italian Bistro,Italian,2200,6.5,4.8,No
+Pizza Corner,Italian,1000,2.5,4.1,No
+Taco Fiesta,Mexican,900,3.0,4.2,No
+Mexican Grill,Mexican,1500,5.5,4.5,No
+Burger Point,Fast Food,500,1.8,3.9,No
+Food Street,Fast Food,700,2.5,4.0,No
+Green Leaf,Healthy,900,2.0,4.4,Yes
+Healthy Bites,Healthy,1300,4.0,4.6,Yes
+Family Kitchen,Indian,1000,3.0,4.3,Yes
+Royal Spice,Indian,2000,8.0,4.7,Yes
