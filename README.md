@@ -1,101 +1,105 @@
-# 🍽️ AI Based Restaurant Selection Advisor
+# 🍴 AI Based Restaurant Selection Advisor
 
-An AI-powered restaurant recommendation system that combines **Natural Language Processing, LangChain, Google Gemini, and Fuzzy Logic** to understand user preferences and recommend suitable restaurants.
+## Student Project
+
+**Project Title:** AI Based Restaurant Selection Advisor
+
+**Student Name:** Densi
+
+**Student ID:** [Enter Student ID]
+
+**Class / Grade:** [Enter Class / Grade]
+
+**School / College:** [Enter School / College Name]
+
+**Subject:** Computer Science / Information Technology
+
+**Academic Year:** 2026
+
+**Project Type:** Artificial Intelligence Mini Project
 
 ---
 
-## 📌 Project Overview
+# 📌 Project Overview
 
-The **AI Based Restaurant Selection Advisor** is a decision-support application designed to help users find restaurants based on natural-language preferences.
+The **AI Based Restaurant Selection Advisor** is an intelligent restaurant recommendation system developed using Python, LangChain, Google Gemini and Fuzzy Logic.
 
-Instead of selecting options manually, users can simply type a request such as:
+The system allows users to describe their restaurant preferences using normal natural language.
+
+For example:
 
 > "I want a cheap Chinese restaurant nearby with a good rating for a family dinner."
 
-The system analyzes the request, extracts important preferences, evaluates restaurants using a **Fuzzy Logic Inference System**, and displays the most suitable restaurants.
+The application analyzes the user's request, extracts important preferences, and recommends suitable restaurants from a restaurant dataset.
 
-The application also includes a **fallback mechanism** so that recommendations can still be generated when the Gemini API is unavailable or its quota has been exceeded.
+The system combines two major AI techniques:
 
----
+1. **Large Language Model (LLM) based preference extraction**
+2. **Fuzzy Logic based restaurant suitability scoring**
 
-## ✨ Features
-
-- 🤖 Natural-language restaurant search
-- 🧠 Google Gemini AI integration
-- 🔗 LangChain-based LLM processing
-- 🧩 Automatic preference extraction
-- 📊 Fuzzy Logic-based restaurant scoring
-- 🍴 Cuisine filtering
-- 💰 Budget consideration
-- 📍 Distance consideration
-- ⭐ Rating consideration
-- 👨‍👩‍👧 Occasion consideration
-- 🔄 Gemini fallback mechanism
-- 📈 Suitability score visualization
-- 🌐 Streamlit web interface
-- 📁 CSV-based restaurant dataset
-- 🔐 Environment-variable API key configuration
+A fallback mechanism is also included so that the application can continue working when the Gemini API is unavailable or its API quota is exceeded.
 
 ---
 
-## 🏗️ System Architecture
+# 🎯 Project Objectives
+
+The main objectives of this project are:
+
+- To build an AI-based restaurant recommendation system.
+- To understand natural-language restaurant preferences.
+- To use LangChain for integrating an LLM.
+- To use Google Gemini for extracting structured preferences.
+- To implement fuzzy logic for restaurant suitability.
+- To rank restaurants according to user preferences.
+- To provide recommendations through a simple Streamlit interface.
+- To create a fallback system when the Gemini API cannot be used.
+- To demonstrate the practical use of Artificial Intelligence and Soft Computing.
+
+---
+
+# 🧠 How the System Works
+
+The complete system follows this workflow:
 
 ```text
-                    USER
-                      │
-                      ▼
-             ┌─────────────────┐
-             │ Streamlit App   │
-             │    app.py       │
-             └────────┬────────┘
-                      │
-                      ▼
-             ┌─────────────────┐
-             │ User Query      │
-             │ Natural Language│
-             └────────┬────────┘
-                      │
-                      ▼
-             ┌─────────────────────────┐
-             │ LangChain + Gemini     │
-             │ Preference Extraction  │
-             └────────────┬────────────┘
-                          │
-                ┌─────────┴─────────┐
-                │                   │
-          Gemini Available     Gemini Fails
-                │                   │
-                ▼                   ▼
-       Extract Preferences    Local Fallback
-                │                   │
-                └─────────┬─────────┘
-                          │
-                          ▼
-                ┌─────────────────┐
-                │ Structured      │
-                │ Preferences     │
-                └────────┬────────┘
-                         │
-                         ▼
-                ┌─────────────────┐
-                │ Restaurant CSV  │
-                │ Dataset         │
-                └────────┬────────┘
-                         │
-                         ▼
-                ┌─────────────────┐
-                │ Fuzzy Logic     │
-                │ Inference       │
-                └────────┬────────┘
-                         │
-                         ▼
-                ┌─────────────────┐
-                │ Suitability     │
-                │ Score           │
-                └────────┬────────┘
-                         │
-                         ▼
-                ┌─────────────────┐
-                │ Ranked Restaurant│
-                │ Recommendations │
-                └─────────────────┘
+                 User
+                  │
+                  ▼
+        Natural Language Query
+                  │
+                  ▼
+        ┌───────────────────┐
+        │ LangChain + Gemini│
+        └───────────────────┘
+                  │
+                  ▼
+       Extract User Preferences
+                  │
+                  ▼
+        Structured Preferences
+                  │
+                  ▼
+        Restaurant Dataset
+                  │
+                  ▼
+          Fuzzy Logic System
+                  │
+          ┌───────┴────────┐
+          ▼                ▼
+     Fuzzification     Fuzzy Rules
+          │                │
+          └───────┬────────┘
+                  ▼
+             Defuzzification
+                  │
+                  ▼
+          Suitability Score
+                  │
+                  ▼
+        Restaurant Ranking
+                  │
+                  ▼
+       Top Recommendations
+                  │
+                  ▼
+          Streamlit Interface
