@@ -6,13 +6,11 @@
 
 **Student Name:** Densi
 
-**Student ID:** [Enter Student ID]
+**Student ID:** 19007
 
-**Class / Grade:** [Enter Class / Grade]
+**Class / Grade:** TYIT
 
-**School / College:** [Enter School / College Name]
-
-**Subject:** Computer Science / Information Technology
+**Subject:** Information Technology
 
 **Academic Year:** 2026
 
